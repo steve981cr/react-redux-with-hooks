@@ -10,7 +10,7 @@ function App() {
   useEffect(function() {
     async function getArticles() {
       try {
-        const response = await axios.get("http://localhost:3011/mockapi/articles");
+        const response = await axios.get("https://www.techandstartup.com/mockapi/articles");
         dispatch(setArticles(response.data));
       } catch(error) {
         console.log('error', error);
